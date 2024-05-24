@@ -28,13 +28,13 @@ void directed(int n) {
     }
   }
 
-  printf("In degrees: %d\n", id);
-  printf("Out degrees: %d\n", od);
 
   clock_t end_t = clock();
 
   double elapsed_ms = (double)(end_t - start_t) / CLOCKS_PER_SEC;
 
+  printf("In degrees: %d\n", id);
+  printf("Out degrees: %d\n", od);
   printf("Calculation Time: %fms\n", elapsed_ms * 1000);
 
   for (int i; i < n; i++) {
